@@ -1,7 +1,6 @@
 'use client'
 import { useProfile } from '@/hooks/useProfile'
 import Loader from '@/components/ui/Loader'
-import { Divide } from 'lucide-react'
 
 export function Statistics() {
 	const {data, isLoading} = useProfile()
@@ -18,7 +17,7 @@ export function Statistics() {
 					<div className='text-xl'>{statistic.label}</div>					
 					<div className='text-3xl'>{statistic.value}</div>					
 				</div>
-			)): <div>Statistic not loaded!</div>}
+			)) : <div>Statistic not loaded!</div>}
 		</div>
 	)  	
 }

@@ -12,7 +12,6 @@ const options: CreateAxiosDefaults = {
 }
 
 const axiosClassic = axios.create(options)
-
 const axiosWithAuth = axios.create(options)
 
 axiosWithAuth.interceptors.request.use(config => {
@@ -24,11 +23,10 @@ axiosWithAuth.interceptors.request.use(config => {
 	return config
 })
 
-axiosWithAuth.interceptors.request.use(
+axiosWithAuth.interceptors.response.use(
 	config => config, 
 	async error => {
 		const originalRequest = error.config
-		
 		if (
 			( error?.response?.status === 401 ||
 				errorCatch(error) === 'jwt expired' ||

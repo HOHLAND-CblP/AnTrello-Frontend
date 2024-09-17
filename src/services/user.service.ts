@@ -7,12 +7,12 @@ export interface IProfileResponse {
 	user: IUser
 	statistics: {
 		label: string
-		value: number
+		value: string
 	}[]
 }
 
 class UserServices {
-	private BASE_URL = 'user/profile'
+	private BASE_URL = '/user/profile'
 	
 	async getProfile() {
 		const response = await axiosWithAuth.get<IProfileResponse>(this.BASE_URL)

@@ -22,6 +22,7 @@ class PomodoroService {
 	}
 	
 	async updateSession(id: number,  data: TypePomodoroSessionFromState) {
+		console.log(data)
 		const response = await axiosWithAuth.put(`${this.BASE_URL}/${id}`, data)
 		return response.data
 	}

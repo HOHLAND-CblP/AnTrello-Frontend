@@ -1,9 +1,9 @@
 import type { IBase } from './root.types'
 
 export enum EnumTaskPriority {
-	low = 'low',
-	medium = 'medium',
-	high = 'high'
+	Low = 'Low',
+	Medium = 'Medium',
+	High = 'High'
 }
 
 export interface ITaskResponse extends IBase {
