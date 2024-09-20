@@ -1,5 +1,5 @@
 # AnTrello frontend
-Frontend для простого таск менеджера включающий в себя: таск менеджер с двумя типами вида, помодоро таймер и блочное расписание дня https://antrello.lolilop.ru
+Frontend для простого таск менеджера включающий в себя: таск менеджер с двумя типами вида, помодоро таймер и блочное расписание дня. Посмотреть проект можно на https://antrello.lolilop.ru
 
 ![изображение](https://github.com/user-attachments/assets/a9ec6358-f49f-4c56-9207-ae2c368d050e)
 ![изображение](https://github.com/user-attachments/assets/6cbab33c-a381-4e18-940a-f98afa6796a6)
